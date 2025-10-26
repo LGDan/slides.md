@@ -11,6 +11,8 @@ A minimalistic markdown slide presentation tool written in Go. Serve any markdow
 - ⚙️ **Configurable**: YAML-based theme configuration
 - 🚀 **Fast**: Lightweight Go binary
 
+![image](image.png)
+
 ## Installation
 
 ```bash
