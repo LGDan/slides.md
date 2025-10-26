@@ -1,0 +1,303 @@
+themes:
+  light:
+    name: Light
+    title: Slides
+    # Optional logo path (relative to markdown dir or absolute URL)
+    logo: acme-corp.webp
+    # Optional predefined first/last slides (markdown). Use \n for newlines.
+    first_slide: "# Welcome to the Deck\nAcme Corp — Q4 Update"
+    last_slide: "## Thanks!\nQuestions?"
+    # Optional watermark overlay
+    watermark: true
+    watermark_text: "ACME CONFIDENTIAL"
+    watermark_opacity: 0.08
+    # Append date to watermark text
+    watermark_append_date: true
+    # Move watermark text every N seconds (0 disables movement)
+    watermark_move_seconds: 10
+    transition: slide
+    # Optional classification banner (top-of-page)
+    classification_label: INTERNAL
+    classification_bg: "#d97706"   # amber-700
+    classification_fg: "#ffffff"
+    css: |
+      body {
+        background: #ffffff;
+        color: #24292e;
+      }
+      .slide {
+        background: #ffffff;
+        color: #24292e;
+      }
+      button {
+        background: #24292e;
+        color: #ffffff;
+      }
+      button:hover {
+        background: #586069;
+      }
+      code {
+        background: #f6f8fa;
+        color: #e83e8c;
+      }
+      pre {
+        background: #f6f8fa;
+        border: 1px solid #e1e4e8;
+      }
+      pre code {
+        color: #24292e;
+      }
+      h1, h2, h3, h4 {
+        color: #24292e;
+      }
+      a {
+        color: #0366d6;
+      }
+
+  dark:
+    name: Dark
+    title: Slides
+    # logo: logo-dark.png
+    # transition: fade   # one of: cut (default), fade, slide
+    # classification_label: CONFIDENTIAL
+    # classification_bg: "#7c3aed"   # violet-600
+    # classification_fg: "#ffffff"
+    css: |
+      body {
+        background: #0d1117;
+        color: #c9d1d9;
+      }
+      .slide {
+        background: #0d1117;
+        color: #c9d1d9;
+      }
+      button {
+        background: #21262d;
+        color: #c9d1d9;
+        border-color: #30363d;
+      }
+      button:hover {
+        background: #30363d;
+      }
+      code {
+        background: #161b22;
+        color: #ff7b72;
+      }
+      pre {
+        background: #161b22;
+        border: 1px solid #30363d;
+      }
+      pre code {
+        color: #c9d1d9;
+      }
+      h1, h2, h3, h4 {
+        color: #c9d1d9;
+      }
+      a {
+        color: #58a6ff;
+      }
+
+  solarized-light:
+    name: Solarized Light
+    title: Slides
+    # logo: logo-solarized-light.png
+    # classification_label: PUBLIC
+    # classification_bg: "#2aa198"
+    # classification_fg: "#073642"
+    css: |
+      body {
+        background: #fdf6e3;
+        color: #657b83;
+      }
+      .slide {
+        background: #fdf6e3;
+        color: #657b83;
+      }
+      button {
+        background: #657b83;
+        color: #fdf6e3;
+      }
+      button:hover {
+        background: #586e75;
+      }
+      code {
+        background: #eee8d5;
+        color: #dc322f;
+      }
+      pre {
+        background: #eee8d5;
+        border: 1px solid #93a1a1;
+      }
+      pre code {
+        color: #586e75;
+      }
+      h1, h2, h3, h4 {
+        color: #586e75;
+      }
+      a {
+        color: #268bd2;
+      }
+
+  solarized-dark:
+    name: Solarized Dark
+    title: Slides
+    # logo: logo-solarized-dark.png
+    # classification_label: SENSITIVE
+    # classification_bg: "#b58900"
+    # classification_fg: "#002b36"
+    css: |
+      body {
+        background: #002b36;
+        color: #839496;
+      }
+      .slide {
+        background: #002b36;
+        color: #839496;
+      }
+      button {
+        background: #839496;
+        color: #002b36;
+      }
+      button:hover {
+        background: #93a1a1;
+      }
+      code {
+        background: #073642;
+        color: #dc322f;
+      }
+      pre {
+        background: #073642;
+        border: 1px solid #586e75;
+      }
+      pre code {
+        color: #839496;
+      }
+      h1, h2, h3, h4 {
+        color: #93a1a1;
+      }
+      a {
+        color: #268bd2;
+      }
+
+  dracula:
+    name: Dracula
+    title: Slides
+    # logo: logo-dracula.png
+    # classification_label: INTERNAL
+    # classification_bg: "#bd93f9"
+    # classification_fg: "#282a36"
+    css: |
+      body {
+        background: #282a36;
+        color: #f8f8f2;
+      }
+      .slide {
+        background: #282a36;
+        color: #f8f8f2;
+      }
+      button {
+        background: #bd93f9;
+        color: #282a36;
+      }
+      button:hover {
+        background: #ff79c6;
+      }
+      code {
+        background: #44475a;
+        color: #ff79c6;
+      }
+      pre {
+        background: #44475a;
+        border: 1px solid #6272a4;
+      }
+      pre code {
+        color: #f8f8f2;
+      }
+      h1, h2, h3, h4 {
+        color: #bd93f9;
+      }
+      a {
+        color: #8be9fd;
+      }
+
+  nord:
+    name: Nord
+    title: Slides
+    # logo: logo-nord.png
+    # classification_label: CONFIDENTIAL
+    # classification_bg: "#5e81ac"
+    # classification_fg: "#eceff4"
+    css: |
+      body {
+        background: #2e3440;
+        color: #d8dee9;
+      }
+      .slide {
+        background: #2e3440;
+        color: #d8dee9;
+      }
+      button {
+        background: #5e81ac;
+        color: #eceff4;
+      }
+      button:hover {
+        background: #81a1c1;
+      }
+      code {
+        background: #3b4252;
+        color: #bf616a;
+      }
+      pre {
+        background: #3b4252;
+        border: 1px solid #4c566a;
+      }
+      pre code {
+        color: #d8dee9;
+      }
+      h1, h2, h3, h4 {
+        color: #88c0d0;
+      }
+      a {
+        color: #81a1c1;
+      }
+
+  one-dark:
+    name: One Dark
+    title: Slides
+    # logo: logo-one-dark.png
+    # classification_label: PUBLIC
+    # classification_bg: "#61afef"
+    # classification_fg: "#282c34"
+    css: |
+      body {
+        background: #282c34;
+        color: #abb2bf;
+      }
+      .slide {
+        background: #282c34;
+        color: #abb2bf;
+      }
+      button {
+        background: #61afef;
+        color: #282c34;
+      }
+      button:hover {
+        background: #528bcc;
+      }
+      code {
+        background: #21252b;
+        color: #e06c75;
+      }
+      pre {
+        background: #21252b;
+        border: 1px solid #181a1f;
+      }
+      pre code {
+        color: #abb2bf;
+      }
+      h1, h2, h3, h4 {
+        color: #61afef;
+      }
+      a {
+        color: #61afef;
+      }

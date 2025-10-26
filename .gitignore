@@ -1,0 +1,21 @@
+# Binaries
+slides
+slides.exe
+*.exe
+
+# Go workspace file
+go.work
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gocache
+.gocache/
