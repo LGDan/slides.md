@@ -117,6 +117,58 @@ themes:
       # ... more CSS
 ```
 
+### Theme options
+
+Each theme supports the following optional fields in addition to `name`, `title`, and `css`:
+
+- **logo**: Path or URL to a logo shown at the top-right of the slides.
+  - Relative paths are resolved relative to your markdown file and served under `/assets/`.
+  - Example: `logo: acme-corp.webp`
+
+- **transition**: Slide transition style. One of `cut` (default), `fade`, `slide`.
+  - Example: `transition: fade`
+
+- **classification_label**, **classification_bg**, **classification_fg**: Show a classification pill centered at the top.
+  - Example:
+    ```yaml
+    classification_label: INTERNAL
+    classification_bg: "#d97706"
+    classification_fg: "#ffffff"
+    ```
+
+- **first_slide**, **last_slide**: Prepend/append markdown slides.
+  - Use `\n` for newlines inside YAML strings.
+  - Example:
+    ```yaml
+    first_slide: "# Welcome to the Deck\nAcme Corp — Q4 Update"
+    last_slide: "## Thanks!\nQuestions?"
+    ```
+
+- **watermark**: Overlay a page-wide diagonal text watermark.
+  - Related options:
+    - `watermark_text`: String to display. Defaults to the deck title.
+    - `watermark_opacity`: 0–1 opacity (default: 0.08).
+    - `watermark_append_date`: true/false to append current date (YYYY-MM-DD).
+    - `watermark_move_seconds`: Integer seconds; if > 0, watermark drifts periodically.
+  - Example:
+    ```yaml
+    watermark: true
+    watermark_text: "ACME CONFIDENTIAL"
+    watermark_opacity: 0.08
+    watermark_append_date: true
+    watermark_move_seconds: 10
+    ```
+
+### Config discovery
+
+Config resolution order:
+
+1. Path passed via `-config`
+2. `$XDG_CONFIG_HOME/slides.md.yaml`
+3. `~/.config/slides.md.yaml`
+4. `./slides.md.yaml`
+5. `./themes.yaml`
+
 ## Navigation
 
 - **Right Arrow** or **Space**: Next slide
